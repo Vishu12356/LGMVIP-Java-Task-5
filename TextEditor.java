@@ -4,6 +4,16 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+class Main1 {
+    public static void main(String[] args) {
+
+        TextEditor textEditor = new TextEditor();
+        textEditor.setTitle("Text Editor");
+        textEditor.setSize(800, 600);
+        textEditor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        textEditor.setVisible(true);
+    }
+}
 public class TextEditor extends JFrame implements ActionListener {
 
     JTextArea textArea;
